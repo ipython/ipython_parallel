@@ -152,4 +152,4 @@ jobs:
           pytest -v --maxfail=2 --cov=ipyparallel ipyparallel/tests/test_ssh.py
 
       - name: Submit codecov report
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5

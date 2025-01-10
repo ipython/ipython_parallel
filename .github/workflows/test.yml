@@ -152,7 +152,7 @@ jobs:
           ${EXEC} chmod -R a+rw .coverage*
 
       - name: Submit codecov report
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
 
       - name: Report on slurm
         if: ${{ matrix.cluster_type == 'slurm' && failure() }}
